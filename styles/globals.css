@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 @font-face {
   font-family: "Cera Pro Black";
@@ -21,7 +21,7 @@
 }
 
 @font-face {
-  font-family: "Cera Pro Black Bold";
+  font-family: "Cera Pro Bold";
   src: url("../assets/fonts/cera-pro/CeraPro-Bold.woff2") format("woff2"),
     url("../assets/fonts/cera-pro/CeraPro-Bold.woff") format("woff");
   font-weight: 700;
@@ -30,7 +30,7 @@
 }
 
 @font-face {
-  font-family: "Cera Pro Black Medium";
+  font-family: "Cera Pro Medium";
   src: url("../assets/fonts/cera-pro/CeraPro-Medium.woff2") format("woff2"),
     url("../assets/fonts/cera-pro/CeraPro-Medium.woff") format("woff");
   font-weight: 500;
@@ -39,7 +39,7 @@
 }
 
 @font-face {
-  font-family: "Cera Pro Black Regular Italic";
+  font-family: "Cera Pro Regular Italic";
   src: url("../assets/fonts/cera-pro/CeraPro-Italic.woff2") format("woff2"),
     url("../assets/fonts/cera-pro/CeraPro-Italic.woff") format("woff");
   font-weight: 400;
@@ -48,7 +48,7 @@
 }
 
 @font-face {
-  font-family: "Cera Pro Black Light";
+  font-family: "Cera Pro Light";
   src: url("../assets/fonts/cera-pro/CeraPro-Light.woff2") format("woff2"),
     url("../assets/fonts/cera-pro/CeraPro-Light.woff") format("woff");
   font-weight: 500;
@@ -56,6 +56,19 @@
   font-display: swap;
 }
 
-body {
-  @apply bg-green_1;
+@layer utilities {
+  .max-container {
+    @apply max-w-screen-xl m-auto px-4 my-0;
+  }
+/* 
+  .dfTransition: {
+    transition: "all 0.2s linear 0s",
+  } */
 }
+
+body {
+  @apply bg-green_1 font-CeraPro-Medium;
+ 
+}
+
+/* linear-gradient(180deg, #06C05A 0%, #07652D 100%); */
