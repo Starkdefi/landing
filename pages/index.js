@@ -1,8 +1,23 @@
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import { Footer } from "../components/footer";
+import { NavBar } from "../components/navbar";
+import { HeroBrief } from "../components/sections/hero-brief";
+import { KeyOffering } from "../components/sections/key-offerings";
+import { RoadMap } from "../components/sections/roadmap";
+import { Team } from "../components/sections/team";
+import { StarkSlides } from "../components/sections/why-starknet";
 
 export default function Home() {
   return (
-    <></>
-  )
+    <>
+      <NavBar />
+      <main className="">
+        <HeroBrief />
+        <KeyOffering />
+        <RoadMap />
+        <StarkSlides />
+        <Team />
+      </main>
+      <Footer />
+    </>
+  );
 }
