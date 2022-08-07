@@ -67,7 +67,7 @@ export function HeroBrief() {
           the veterans in the space, but for the ordinary person as well.
         </Text>
         <button>
-          <ScrollArrow className="lg:scale-100 md:scale-90 scale-50" />
+          <ScrollArrow className="lg:scale-100 md:scale-70 scale-50" />
         </button>
       </div>
     </section>
