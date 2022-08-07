@@ -13,3 +13,8 @@
   @apply flex flex-col items-center justify-end;
   @apply lg:w-1/2 md:w-3/5 xl:py-52 lg:py-40 md:py-28 pb-8 xl:pl-20 md:pl-16 px-4 absolute h-full z-10;
 }
+
+.brief {
+  @apply bg-green_dark2 flex flex-col items-center justify-center;
+  @apply rounded-b-[45px] xl:p-32 lg:p-24 md:p-12 py-10 px-4;
+}
