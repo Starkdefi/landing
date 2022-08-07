@@ -1,0 +1,28 @@
+.container {
+  @apply bg-green_dark1 px-0 rounded-b-[45px] pt-12 pb-24;
+  @apply px-20;
+}
+
+.slide_active {
+  @apply pl-10 border-l-2 border-solid border-white py-2;
+}
+
+.slide_active h2 {
+  @apply text-white text-[26px] leading-[160%];
+}
+
+.slide_active p {
+  @apply font-CeraPro-Light text-white opacity-[0.65] text-[16px];
+}
+
+.slide_inactive {
+  @apply pl-10 py-6 border-l border-solid border-white border-opacity-[0.2];
+}
+
+.slide_inactive h2 {
+  @apply text-white opacity-[0.2] text-[26px] leading-[160%];
+}
+
+.slide_inactive p {
+  @apply font-CeraPro-Light text-white  opacity-[0.2] text-[16px];
+}
