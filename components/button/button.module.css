@@ -11,11 +11,11 @@
 .ringed::before {
   content: "";
   z-index: -1;
-  margin: -4px;
+  margin: -3px;
   border-radius: inherit;
   @apply absolute;
   @apply top-0 bottom-0 right-0 left-0;
-  transition: all 2.2s linear 0s;
+  transition: all 0.2s linear 0s;
 
   background: linear-gradient(
     -64deg,
