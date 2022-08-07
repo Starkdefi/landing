@@ -2,10 +2,11 @@ import Image from "next/image";
 import styles from "./navbar.module.css";
 import logo from "../../assets/icons/logo.svg";
 import { Button } from "../button";
+import Link from "next/link";
 
 export function NavBar() {
   return (
-    <nav className={`${styles.container} max-container`}>
+    <nav className={`${styles.container} max-w-[1094px] m-auto px-4 my-0`}>
       <button className={styles.apps_button}>
         <span className="uppercase text-[19px] leading-[24px]">Apps</span>
         <svg
@@ -34,7 +35,11 @@ export function NavBar() {
         </svg>
       </button>
 
-      <Image src={logo} height={39} width={172.35} alt="logo" />
+      <Link href="/">
+        <a>
+          <Image src={logo} height={39} width={172.35} alt="logo" />
+        </a>
+      </Link>
 
       <Button type="ringed" className="text-[13.1px]">
         Launch
