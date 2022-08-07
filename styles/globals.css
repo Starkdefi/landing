@@ -55,3 +55,7 @@
   font-style: normal;
   font-display: swap;
 }
+
+body {
+  @apply bg-green_1;
+}
