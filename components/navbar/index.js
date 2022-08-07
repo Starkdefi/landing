@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./navbar.module.css";
-import logo from "../../assets/icons/logo.svg";
+import Logo from "../../assets/icons/logo.svg";
 import { Button } from "../button";
 import Link from "next/link";
 
@@ -39,7 +39,7 @@ export function NavBar() {
 
       <Link href="/">
         <a>
-          <Image src={logo} height={39} width={172.35} alt="logo" />
+          <Logo />
         </a>
       </Link>
 
