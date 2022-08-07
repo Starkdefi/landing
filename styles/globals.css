@@ -1,26 +1,57 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Cera Pro Black";
+  src: url("../assets/fonts/cera-pro/CeraPro-Black.woff2") format("woff2"),
+    url("../assets/fonts/cera-pro/CeraPro-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+@font-face {
+  font-family: "Cera Pro Black Italic";
+  src: url("../assets/fonts/cera-pro/CeraPro-BlackItalic.woff2") format("woff2"),
+    url("../assets/fonts/cera-pro/CeraPro-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
 }
 
-* {
-  box-sizing: border-box;
+@font-face {
+  font-family: "Cera Pro Black Bold";
+  src: url("../assets/fonts/cera-pro/CeraPro-Bold.woff2") format("woff2"),
+    url("../assets/fonts/cera-pro/CeraPro-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+@font-face {
+  font-family: "Cera Pro Black Medium";
+  src: url("../assets/fonts/cera-pro/CeraPro-Medium.woff2") format("woff2"),
+    url("../assets/fonts/cera-pro/CeraPro-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cera Pro Black Regular Italic";
+  src: url("../assets/fonts/cera-pro/CeraPro-Italic.woff2") format("woff2"),
+    url("../assets/fonts/cera-pro/CeraPro-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cera Pro Black Light";
+  src: url("../assets/fonts/cera-pro/CeraPro-Light.woff2") format("woff2"),
+    url("../assets/fonts/cera-pro/CeraPro-Light.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
