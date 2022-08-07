@@ -10,5 +10,6 @@
 }
 
 .hero_text {
-  @apply w-1/2 py-52 pl-20 absolute h-full z-10;
+  @apply flex flex-col items-center justify-end;
+  @apply lg:w-1/2 md:w-3/5 xl:py-52 lg:py-40 md:py-28 pb-8 xl:pl-20 md:pl-16 px-4 absolute h-full z-10;
 }
