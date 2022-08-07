@@ -1,0 +1,7 @@
+.title {
+  @apply xl:text-[36.29px] lg:text-[30.29px] md:text-[22.29px] text-[18px] leading-[160%];
+}
+
+.text {
+  @apply font-CeraPro-Light xl:text-[20px] lg:text-[18px] md:text-[16px] text-[14px];
+}
