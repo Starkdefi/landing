@@ -6,6 +6,14 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        "CeraPro-Black": ["Cera Pro Black", "sans-serif"],
+        "CeraPro-Black-Italic": ["Cera Pro Black Italic", "sans-serif"],
+        "CeraPro-Bold": ["Cera Pro Bold", "sans-serif"],
+        "CeraPro-Medium": ["Cera Pro Medium", "sans-serif"],
+        "CeraPro-Regular-Italic": ["Cera Pro Regular Italic", "sans-serif"],
+        "CeraPro-Light": ["Cera Pro Light", "sans-serif"],
+      },
       colors: {
         green_light: "#00DA63",
         green_light1: "#25AE63",
@@ -13,6 +21,7 @@ module.exports = {
         green_2: "#162B20",
         green_dark1: "#011809",
         green_dark2: "#010E05",
+        btn_black: "#0A0C0B",
       },
       screens: {
         "3xl": "2400px",
@@ -21,6 +30,3 @@ module.exports = {
   },
   plugins: [],
 };
-
-// linear-gradient(180deg, #06C05A 0%, #07652D 100%);
-// border: 1px solid rgba(0, 218, 99, 0.16)
