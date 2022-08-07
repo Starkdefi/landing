@@ -3,6 +3,7 @@ import Image from "next/image";
 import Rocket from "../../../assets/icons/rocket.svg";
 import bgImage from "../../../assets/images/bg-video.jpeg";
 import ScrollArrow from "../../../assets/icons/scroll-arrow.svg";
+import { Text, Title } from "../../utils";
 
 export function HeroBrief() {
   return (
@@ -50,13 +51,13 @@ export function HeroBrief() {
         </div>
       </div>
       <div className={styles.brief}>
-        <h2 className="xl:text-[36.29px] lg:text-[30.29px] md:text-[22.29px] text-[18px] leading-[160%] text-white text-center">
+        <Title className="text-white text-center">
           …Your one-stop hub for Defi Solutions on Starknet
-        </h2>
-        <h2 className="xl:text-[36.29px]  lg:text-[30.29px] md:text-[22.29px] text-[18px] leading-[160%] text-green_light text-center">
+        </Title>
+        <Title className="text-green_light text-center">
           Don’t be left out, a change is coming…
-        </h2>
-        <p className=" font-CeraPro-Light text-white opacity-[0.65] xl:text-[20px] lg:text-[18px] md:text-[16px] text-[14px] text-center pt-8 lg:pb-12 pb-4">
+        </Title>
+        <Text className=" text-white opacity-[0.65] text-center pt-8 lg:pb-12 pb-4">
           StarkDeFi is a hub for defi solutions on StarkNet, looking to improve
           the adoption of blockchain technology. StarkNet provides unlimited
           possibilities for innovative solutions (Scalability) on the
@@ -64,7 +65,7 @@ export function HeroBrief() {
           process for newbies in the blockchain space with a hub that
           accommodates a variety of deFi solutions. For us, DeFi is not just for
           the veterans in the space, but for the ordinary person as well.
-        </p>
+        </Text>
         <button>
           <ScrollArrow className="lg:scale-100 md:scale-90 scale-50" />
         </button>
