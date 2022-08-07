@@ -58,7 +58,7 @@
 
 @layer utilities {
   .max-container {
-    @apply max-w-screen-xl m-auto px-4 my-0 mb-8;
+    @apply max-w-screen-xl m-auto px-4 my-0;
   }
   /* 
   .dfTransition: {
