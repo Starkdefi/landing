@@ -1,0 +1,7 @@
+.container {
+  @apply flex items-center justify-between py-8;
+}
+
+.apps_button {
+  @apply flex text-white gap-4 items-center justify-center;
+}
