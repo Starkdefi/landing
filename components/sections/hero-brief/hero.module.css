@@ -1,0 +1,14 @@
+.container {
+}
+
+.hero {
+  @apply rounded-t-[41px] relative;
+}
+
+.bg_video {
+  @apply rounded-t-[45px];
+}
+
+.hero_text {
+  @apply w-1/2 py-52 pl-20 absolute h-full z-10;
+}
