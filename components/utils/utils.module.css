@@ -7,5 +7,5 @@
 }
 
 .simple_link {
-  @apply font-CeraPro-Light underline flex items-center gap-4;
+  @apply font-CeraPro-Light underline flex items-center gap-2;
 }

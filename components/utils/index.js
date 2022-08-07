@@ -9,10 +9,10 @@ export function Text({ children, className }) {
   return <p className={`${styles.text} ${className}`}>{children}</p>;
 }
 
-export function SimpleLink({ text, className, url }) {
+export function SimpleLink({ text, className, arroClass = "stroke-white", url }) {
   return (
     <a className={`${styles.simple_link} ${className}`} href={url}>
-      {text} <LinkArrow />
+      {text} <LinkArrow className={arroClass} />
     </a>
   );
 }
