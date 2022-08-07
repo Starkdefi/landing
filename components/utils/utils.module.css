@@ -5,3 +5,7 @@
 .text {
   @apply font-CeraPro-Light xl:text-[20px] lg:text-[18px] md:text-[16px] text-[14px];
 }
+
+.simple_link {
+  @apply font-CeraPro-Light underline flex items-center gap-4;
+}
