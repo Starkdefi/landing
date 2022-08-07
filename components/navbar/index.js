@@ -6,7 +6,9 @@ import Link from "next/link";
 
 export function NavBar() {
   return (
-    <nav className={`${styles.container} max-w-[1094px] m-auto px-4 my-0`}>
+    <nav
+      className={`${styles.container} xl:max-w-[1094px] max-w-[940px] m-auto px-4 my-0`}
+    >
       <button className={styles.apps_button}>
         <span className="uppercase text-[19px] leading-[24px]">Apps</span>
         <svg
@@ -41,9 +43,11 @@ export function NavBar() {
         </a>
       </Link>
 
-      <Button type="ringed" className="text-[13.1px]">
-        Launch
-      </Button>
+      <div className="md:block hidden">
+        <Button type="ringed" className="text-[13.1px]">
+          Launch
+        </Button>
+      </div>
     </nav>
   );
 }
