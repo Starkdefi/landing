@@ -1,5 +1,5 @@
 .button {
-  @apply flex items-center justify-center rounded-3xl py-1 px-10;
+  @apply flex items-center justify-center rounded-3xl py-1 xl:px-10 px-6;
 }
 
 .regular {

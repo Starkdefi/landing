@@ -1,11 +1,7 @@
 .container {
-  @apply max-w-[360px] w-full h-[476px] rounded-[10px] py-[33px] px-[32px] my-2;
+  @apply max-w-[360px] w-full lg:h-[476px] h-[400px] rounded-[10px] py-[33px] px-[32px] my-2;
   @apply flex flex-col items-center justify-between xl:scale-100 scale-90;
-  background: linear-gradient(
-    330.37deg,
-    rgba(14, 121, 47, 1) 0%,
-    #06c05a 100%
-  );
+  background: linear-gradient(330.37deg, rgba(14, 121, 47, 1) 0%, #06c05a 100%);
   border: 1px solid rgba(0, 218, 99, 0.16);
 }
 
@@ -15,7 +11,7 @@
 }
 
 .text {
-  @apply pt-4 text-[16px] text-white leading-[140%];
+  @apply pt-4 lg:text-[16px] text-[12px] text-white leading-[140%];
 }
 
 .link {

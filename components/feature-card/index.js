@@ -16,7 +16,7 @@ export default function FeatureCard({
         <Icon /> {title}
       </h1>
       <p className={styles.text}>{text}</p>
-      <div className="h-[255px]">
+      <div className="lg:h-[255px] md:h-[190px] h-[225px]">
         <Image src={image} alt={title} placeholder="blur" />
       </div>
       <SimpleLink
