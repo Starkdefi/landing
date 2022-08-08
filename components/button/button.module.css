@@ -1,9 +1,17 @@
 .button {
-  @apply flex items-center justify-center py-2 px-12;
+  @apply flex items-center justify-center rounded-3xl py-1 px-10;
 }
 
+.regular {
+  @apply transition-all ease-in duration-200;
+}
+
+.regular:hover,
+.regular:hover path {
+  @apply bg-green_light text-white fill-white;
+}
 .ringed {
-  @apply bg-btn_black text-green_light1 rounded-3xl relative;
+  @apply bg-btn_black text-green_light1 relative;
   @apply bg-clip-border border-2 border-transparent;
   transition: "all 0.2s linear 0s";
 }
