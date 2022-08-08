@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./navbar.module.css";
 import Logo from "../../assets/icons/logo.svg";
 import { Button } from "../button";
@@ -44,7 +43,7 @@ export function NavBar() {
       </Link>
 
       <div className="md:block hidden">
-        <Button type="ringed" className="text-[13.1px]">
+        <Button type="ringed" className="text-[13.1px] w-[136px] py-2">
           Launch
         </Button>
       </div>
