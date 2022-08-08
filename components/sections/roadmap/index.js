@@ -15,7 +15,7 @@ export function RoadMap() {
           here.
           <br /> STARKDEFI RAVING MAD!
         </Text>
-        <div className="py-16">
+        <div className="xl:py-16 py-4">
           <RoadMapWidget />
         </div>
       </div>

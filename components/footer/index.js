@@ -37,8 +37,8 @@ const socials = [
 export function Footer() {
   return (
     <footer className={`${styles.footer}`}>
-      <section className="max-container flex items-start justify-between">
-        <div className="w-[55%]">
+      <section className="xl:max-container md:px-8 px-4 m-auto flex items-start justify-between flex-wrap md:flex-nowrap">
+        <div className="lg:w-[55%] md:w-[40%] w-full">
           <div className="flex flex-col gap-4">
             <Link href="/">
               <a>
@@ -52,16 +52,19 @@ export function Footer() {
               </span>
             </p>
           </div>
-          <div className="flex items-center gap-8 pt-28">
+          <div className="flex items-center lg:gap-8 gap-4 xl:pt-28 lg:pt-24 md:pt-12 pt-8 lg:flex-nowrap flex-wrap md:pb-0 pb-8">
             <a href="#">
-              <Button className="text-[18px] text-green_light bg-green_2 rounded">
+              <Button className="xl:text-[18px] md:text-[14px] text-[12px] text-green_light bg-green_2 rounded">
                 <p className="flex gap-3 items-center py-1">
                   Contact Us <Arrow className={styles.arrow} />
                 </p>
               </Button>
             </a>
             <a href="#" target="_blank" rel="noopener noreferrer">
-              <Button className="text-[18px]" type="ringed">
+              <Button
+                className="txl:text-[18px]  md:text-[14px] text-[12px]"
+                type="ringed"
+              >
                 <p className="flex gap-3 items-center py-1">
                   Join Our Community <Arrow className={styles.arrow} />
                 </p>
@@ -110,7 +113,7 @@ export function Footer() {
         <div className={styles.section_column}>
           <div>
             <h3 className={styles.section_head}>Social</h3>
-            <div className="flex items-center justify-between gap-3 pt-4">
+            <div className="flex items-center lg:justify-between justify-start lg:flex-nowrap flex-wrap gap-3 pt-4">
               {socials.map((social) => (
                 <a
                   className={styles.section_nav_link}

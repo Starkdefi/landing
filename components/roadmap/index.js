@@ -4,10 +4,11 @@ export default function RoadMapWidget() {
   return (
     <svg
       width="100%"
-      height="527"
+      height="auto"
       viewBox="0 0 1289 527"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={styles.container}
     >
       <path
         d="M187 307.287V464H189V307C188.344 307.173 187.674 307.269 187 307.287V307.287Z"

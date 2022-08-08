@@ -21,7 +21,7 @@ export function StarkSlides() {
           />
         </div>
         <div className="flex mt-12 justify-between">
-          <div className="w-[60%] max-h-[23rem] overflow-y-scroll">
+          <div className="md:w-[60%] max-h-[23rem] overflow-y-scroll">
             <div className={styles.slide_active}>
               <h2 className="">Fast Transactions</h2>
               <p className="">
@@ -62,7 +62,7 @@ export function StarkSlides() {
               </p>
             </div>
           </div>
-          <div>
+          <div className="lg:w-[35%] w-[30%] py-8 md:block hidden">
             <Image src={fast} alt="slide" />
           </div>
         </div>
