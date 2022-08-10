@@ -14,7 +14,7 @@ export default function Document() {
         ></Script>
 
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
+          src="https://www.googletagmanager.com/gtag/js?id=G-LNH0V18K4F"
           strategy="afterInteractive"
         />
         <Script id="google-analytics" strategy="afterInteractive">
