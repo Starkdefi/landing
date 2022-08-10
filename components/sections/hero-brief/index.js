@@ -70,9 +70,11 @@ export function HeroBrief() {
             accommodates a variety of deFi solutions. For us, DeFi is not just
             for the veterans in the space, but for the ordinary person as well.
           </Text>
-          <button>
-            <ScrollArrow className="lg:scale-100 md:scale-70 scale-50" />
-          </button>
+          <a href="#offers">
+            <button>
+              <ScrollArrow className="lg:scale-100 md:scale-70 scale-50" />
+            </button>
+          </a>
         </Fade>
       </div>
     </section>

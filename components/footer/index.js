@@ -13,23 +13,23 @@ import { Button } from "../button";
 
 const socials = [
   {
-    url: "https://discord.gg/",
+    url: "https://discord.com/invite/starkdefi",
     Icon: Discord,
   },
   {
-    url: "https://medium.com/",
+    url: "https://starkdefi.medium.com/",
     Icon: Medium,
   },
   {
-    url: "https://twitter.com/",
+    url: "https://twitter.com/StarkDefi",
     Icon: Twitter,
   },
   {
-    url: "https://telegram.me/",
+    url: "https://t.me/starkdefi_ann",
     Icon: Telegram,
   },
   {
-    url: "https://github.com/",
+    url: "https://github.com/Starkdefi",
     Icon: Github,
   },
 ];
@@ -60,7 +60,11 @@ export function Footer() {
                 </p>
               </Button>
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://linktr.ee/starkdefi"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button
                 className="txl:text-[18px]  md:text-[14px] text-[12px]"
                 type="ringed"

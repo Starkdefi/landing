@@ -76,8 +76,12 @@
   }
 }
 
+html {
+  @apply scroll-smooth;
+}
+
 body {
-  @apply bg-green_1 font-CeraPro-Medium scroll-smooth;
+  @apply bg-green_1 font-CeraPro-Medium;
 }
 
 /* linear-gradient(180deg, #06C05A 0%, #07652D 100%); */
