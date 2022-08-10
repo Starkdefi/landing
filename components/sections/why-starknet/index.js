@@ -23,8 +23,10 @@ export function StarkSlides() {
             />
           </Fade>
         </div>
-        <div className="flex mt-12 justify-between">
-          <div className="md:w-[60%] max-h-[23rem] overflow-y-scroll">
+        <div className="flex mt-12 justify-between cursor-all-scroll">
+          <div
+            className={`md:w-[60%] max-h-[23rem] overflow-y-auto no-scrollbar`}
+          >
             <div className={styles.slide_active}>
               <Fade triggerOnce="true" direction="up">
                 <h2 className="">Fast Transactions</h2>
