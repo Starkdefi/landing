@@ -38,7 +38,7 @@ const offers = [
 ];
 export function KeyOffering() {
   return (
-    <section className={`${styles.container} max-container `}>
+    <section id="offers" className={`${styles.container} max-container `}>
       <div className="flex flex-col items-center justify-center xl:pt-28 lg:pt-20 pt-14">
         <Fade cascade="true" direction="up" triggerOnce="true">
           <Title className="text-white text-center">
