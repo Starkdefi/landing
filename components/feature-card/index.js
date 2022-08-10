@@ -21,7 +21,7 @@ export default function FeatureCard({
       </div>
       <SimpleLink
         className={styles.link}
-        arroClass="stroke-green_light"
+        arrowClass="stroke-green_light"
         text={`${title} on StarkDefi`}
         url={link}
         target="_blank"

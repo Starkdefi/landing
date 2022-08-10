@@ -12,13 +12,13 @@ export function Text({ children, className }) {
 export function SimpleLink({
   text,
   className,
-  arroClass = "stroke-white",
+  arrowClass = "stroke-white",
   url,
   ...props
 }) {
   return (
     <a className={`${styles.simple_link} ${className}`} href={url} {...props}>
-      {text} <LinkArrow className={arroClass} />
+      {text} <LinkArrow className={arrowClass} />
     </a>
   );
 }
