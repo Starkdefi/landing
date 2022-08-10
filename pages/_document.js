@@ -1,11 +1,14 @@
 import { Html, Head, Main, NextScript } from "next/document";
 import Script from "next/script";
+// import SplashScreen from "../components/splashscreen";
+
 
 export default function Document() {
   return (
     <Html>
       <Head />
       <body>
+        {/* <SplashScreen /> */}
         <Main />
         <NextScript />
         <Script

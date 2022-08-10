@@ -1,7 +1,9 @@
 import "../styles/globals.css";
 import Head from "next/head";
+import React from "react";
 
-function MyApp({ Component, pageProps }) {
+function StarkApp({ Component, pageProps }) {
+
   return (
     <>
       <Head>
@@ -22,9 +24,10 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:image:height" content="630" />
         <meta property="og:image" content="/assets/og-image.jpg" />
       </Head>
+
       <Component {...pageProps} />
     </>
   );
 }
 
-export default MyApp;
+export default StarkApp;
