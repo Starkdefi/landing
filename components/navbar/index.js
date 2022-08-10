@@ -43,9 +43,11 @@ export function NavBar() {
       </Link>
 
       <div className="md:block hidden">
-        <Button type="ringed" className="text-[13.1px] w-[136px] py-2">
-          Launch
-        </Button>
+        <a href="https://app.starkdefi.com/" target="_blank" rel="noreferrer">
+          <Button type="ringed" className="text-[13.1px] w-[136px] py-2">
+            Launch
+          </Button>
+        </a>
       </div>
     </nav>
   );
