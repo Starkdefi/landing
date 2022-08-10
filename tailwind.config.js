@@ -22,6 +22,7 @@ module.exports = {
         green_dark1: "#011809",
         green_dark2: "#010E05",
         btn_black: "#0A0C0B",
+        black_alt: "#080B09",
       },
       screens: {
         "3xl": "2400px",
