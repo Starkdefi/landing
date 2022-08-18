@@ -17,6 +17,7 @@ module.exports = {
       colors: {
         green_light: "#00DA63",
         green_light1: "#25AE63",
+        green_light2: "#BCDBCA",
         green_1: "#131E18",
         green_2: "#162B20",
         green_dark1: "#011809",
