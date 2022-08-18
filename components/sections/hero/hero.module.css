@@ -1,0 +1,7 @@
+.bg_video {
+}
+
+.hero_text {
+  @apply flex flex-col items-start justify-center;
+  @apply lg:w-[65%] md:w-3/5 lg:pt-0 md:pt-24 pt-52 pb-8 xl:pl-8 md:pl-16 px-4 absolute h-full z-10;
+}
