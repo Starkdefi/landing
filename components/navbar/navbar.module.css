@@ -1,5 +1,9 @@
 .container {
-  @apply flex items-center justify-between py-8;
+  box-shadow: 0 0 0 100vmax var(--bg-c);
+  clip-path: inset(0 -100vmax);
+  
+  background: var(--bg-c);
+  transition: top 0.3s;
 }
 
 .apps_button {

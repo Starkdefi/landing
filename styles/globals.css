@@ -98,3 +98,15 @@ body {
 [data-scale="1"] {
   @apply scale-100;
 }
+
+.nav_bar {
+  --bg-c: #000e05b5;
+}
+
+.nav_bar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(60px);
+  z-index: -1;
+}
