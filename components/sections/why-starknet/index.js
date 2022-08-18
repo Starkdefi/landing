@@ -5,7 +5,6 @@ import low_gas from "../../../assets/images/low-gas.png";
 import trustless from "../../../assets/images/trustless.png";
 import more from "../../../assets/images/more.png";
 import Image from "next/image";
-import Script from "next/script";
 import { Fade } from "react-awesome-reveal";
 
 const slides = [
@@ -20,6 +19,7 @@ const slides = [
       confirmation that a blockchain transaction is final, hence,
       improving transaction speed.
     `,
+    image: fast,
   },
   {
     title: "Low Gas Fees",
@@ -30,6 +30,7 @@ const slides = [
       recording it. This enables sharing of gas fees with
       participants, making it a whole lot cheaper.
     `,
+    image: low_gas,
   },
   {
     title: "Trustless",
@@ -39,6 +40,7 @@ const slides = [
       trust the code which is open source and can be checked and
       verified.
     `,
+    image: trustless,
   },
   {
     title: "And more...",
@@ -49,6 +51,7 @@ const slides = [
       Starknet, head over to their website by clicking on “Learn
       More”.
     `,
+    image: more,
   },
 ];
 
@@ -75,78 +78,32 @@ export function StarkSlides() {
           id="slides-container"
           className="flex mt-12 justify-between cursor-all-scroll  "
         >
-          <div
-            className={`md:w-[60%] max-h-[23rem] overflow-y-auto no-scrollbar`}
-          >
-            {slides.map(({ title, content }, i) => (
-              <div
-                key={i}
-                id={`slide-${i}`}
-                className={`${
-                  i == 0 ? "slide_active" : "slide_inactive"
-                } h-[90%]`}
-              >
-                <Fade triggerOnce="true" direction="up">
-                  <h2 className="">{title}</h2>
-                  <p className="">{content}</p>
-                </Fade>
+          <div className="lg:max-h-[280px] max-h-[266px] overflow-y-auto no-scrollbar flex flex-col gap-8 snap-y snap-mandatory">
+            {slides.map(({ title, content, image }, i) => (
+              <div key={i} className="py-2 flex justify-between snap-center">
+                <div className="md:w-3/5">
+                  <Fade triggerOnce="true" direction="up">
+                    <h2 className="xl:pl-10 md:pl-8 pl-4 text-white xl:text-[26px] lg:text-[24px] text-[22px] leading-[160%] border-l-2 border-solid border-white">
+                      {title}
+                    </h2>
+                    <p className="xl:pl-10 md:pl-8 pl-4 font-CeraPro-Medium text-white opacity-[0.65] xl:text-[18px] lg:text-[16px] text-[12px] pt-2 leading-[160%]">
+                      {content}
+                    </p>
+                  </Fade>
+                </div>
+                <div className="h-[258px] lg:w-[300px] w-[220px] relative overflow-hidden hidden md:block">
+                  <Image
+                    layout="responsive"
+                    objectFit="cover"
+                    src={image}
+                    alt={title}
+                  />
+                </div>
               </div>
             ))}
           </div>
-          <div className="lg:w-[35%] w-[30%] py-8 md:block hidden sticky top-0">
-            <div data-slide="slide-0" data-hidden="false">
-              <Image src={fast} alt="slide" />
-            </div>
-            <div data-slide="slide-1" data-hidden="true">
-              <Image src={low_gas} alt="slide" />
-            </div>
-            <div data-slide="slide-2" data-hidden="true">
-              <Image src={trustless} alt="slide" />
-            </div>
-            <div data-slide="slide-3" data-hidden="true">
-              <Image src={more} alt="slide" />
-            </div>
-          </div>
         </div>
       </div>
-      <Script id="slide_script">
-        {`
-        const slide_container = document.querySelector('#slides-container');
-
-        // const scroll_listener = slide_container.addEventListener('scroll', () => {
-          
-        //   document.querySelectorAll("div[id|='slide']").forEach((slide) => {
-        //     console.log(slide.id, slide_container.offsetTop, slide.offsetTop, slide.offsetHeight, )
-        //   })
-          
-        // })
-
-        const observer = new IntersectionObserver(entries => {
-          entries.forEach(entry => {
-            const id = entry.target.getAttribute('id');
-          
-            // console.log(entry.isIntersecting, entry)
-
-            if (entry.isIntersecting) {
-              document.querySelector(\`div[data-slide=\${id}]\`).setAttribute('data-hidden', false);
-
-              entry.target.classList.remove('slide_inactive')
-              entry.target.classList.add('slide_active')
-
-            } else {
-              document.querySelector(\`div[data-slide=\${id}]\`).setAttribute('data-hidden', true);
-              entry.target.classList.remove('slide_active')
-              entry.target.classList.add('slide_inactive')
-            }
-          });
-        }, {threshold: 1});
-      
-        // Track all sections that have an id applied
-        document.querySelectorAll("div[id|='slide']").forEach((slide) => {
-          observer.observe(slide);
-        });
-        `}
-      </Script>
     </section>
   );
 }

@@ -2,7 +2,6 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 @import "./loading.css";
-@import "./slides.css";
 
 @font-face {
   font-family: "Cera Pro Black";
