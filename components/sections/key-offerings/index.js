@@ -8,6 +8,7 @@ import swapIllustration from "../../../assets/images/swap-asset.png";
 import stakeIllustration from "../../../assets/images/stake-assets.png";
 import FeatureCard from "../../feature-card";
 import { Fade } from "react-awesome-reveal";
+import Script from "next/script";
 
 const offers = [
   {
@@ -56,11 +57,80 @@ export function KeyOffering() {
           />
         </Fade>
       </div>
-      <div className="flex items-center lg:justify-between justify-center pt-20 md:flex-nowrap flex-wrap">
+      <div
+        className="flex items-center lg:justify-between justify-center pt-20 md:flex-nowrap flex-wrap"
+        id="feature-cards"
+      >
         {offers.map((offer, i) => (
-          <FeatureCard key={i} {...offer} />
+          <FeatureCard key={i} {...offer} id={`feature-card-${i}`} />
         ))}
       </div>
+      <Script id="animate-feature-cards" strategy="afterInteractive">
+        {`
+          // const feature_container = document.getElementById('offers');
+          
+          // const container_offset_top = feature_container.offsetTop;
+          // const container_height = feature_container.offsetHeight;
+
+          // const feature_mint = document.getElementById('feature-card-0');
+          // const feature_stake = document.getElementById('feature-card-2');
+
+
+          // feature_mint.animate(
+          //   {
+          //     transform: [
+          //       // lg:rotate-[18deg] xl:translate-x-[130px] lg:translate-x-[80px]
+          //       "rotate(18deg) translateX(130px)",
+          //       "rotate(0) translateX(0)"
+               
+          //     ]
+          //   },{
+          //     duration: 1,
+          //     fill: "both",
+          //     timeline: new ScrollTimeline({
+          //       scrollSource: document.documentElement,
+          //       timeRange: 1,
+          //       fill: "both",
+          //       scrollOffsets: [
+          //         "20%",
+          //         "70%"
+          //       ]
+
+          //       // scrollOffsets: [
+          //       //   {target: feature_container, edge: 'end', threshold: '0'},
+          //       //   {target: feature_container, edge: 'start', threshold: '1'}
+          //       // ]
+          //     })
+          //   }
+          // )
+
+          // feature_stake.animate(
+          //   {
+          //     transform: [
+          //       // lg:rotate-[-18deg] xl:translate-x-[-130px] lg:translate-x-[-80px]
+          //       "rotate(-18deg) translateX(-130px)",
+          //       "rotate(0) translateX(0)"
+          //     ]
+          //   },{
+          //     easing: "linear",
+          //     timeline: new ScrollTimeline({
+          //       source: document.documentElement,
+          //       timeRange: 1,
+          //       scrollOffsets: [
+          //         CSS.px(container_offset_top + container_height - window.innerHeight),
+          //         CSS.px(container_offset_top)
+          //       ]
+
+          //       // scrollOffsets: [
+          //       //   {target: feature_container, edge: 'end', threshold: '0.5'},
+          //       //   {target: feature_container, edge: 'start', threshold: '1'}
+          //       // ]
+          //     })
+          //   }
+          // )
+
+        `}
+      </Script>
     </section>
   );
 }
