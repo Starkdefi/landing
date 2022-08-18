@@ -1,0 +1,3 @@
+.container {
+  @apply lg:pb-52 md:pb-20 pb-24;
+}
