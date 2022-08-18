@@ -10,7 +10,7 @@ export function NavBar() {
       id="navbar"
       className={`${styles.container} fixed top-0 left-0 right-0 z-[60]`}
     >
-      <div className="xl:max-w-[1094px] max-w-[940px] m-auto flex items-center justify-between py-4 px-4 my-0">
+      <div className="xl:max-container max-w-[940px] m-auto flex items-center justify-between py-5 px-4 my-0">
         <button className={styles.apps_button}>
           <span className="uppercase text-[19px] leading-[24px]">Apps</span>
           <svg
