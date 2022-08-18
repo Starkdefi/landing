@@ -1,0 +1,31 @@
+
+.slide_active,
+.slide_inactive {
+  @apply xl:pl-10 md:pl-8 pl-4 border-l border-solid border-white py-2;
+}
+
+.slide_active {
+  @apply border-l-2;
+}
+
+.slide_active h2,
+.slide_inactive h2 {
+  @apply text-white xl:text-[26px] lg:text-[24px] text-[22px] leading-[160%];
+}
+
+.slide_active p,
+.slide_inactive p {
+  @apply font-CeraPro-Medium text-white opacity-[0.65] xl:text-[16px] lg:text-[14px] text-[12px] pt-2;
+}
+
+.slide_inactive {
+  @apply border-opacity-[0.2] pt-8;
+}
+
+.slide_inactive h2 {
+  @apply text-opacity-[0.2];
+}
+
+.slide_inactive p {
+  @apply opacity-[0.2];
+}
