@@ -1,0 +1,4 @@
+.brief {
+  @apply bg-green_dark2 flex flex-col items-center justify-center;
+  @apply rounded-[45px] xl:p-24 lg:p-16  md:p-16 md:pb-2 pt-10 pb-2 px-12;
+}
