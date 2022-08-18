@@ -20,7 +20,6 @@ export function Hero() {
             autoPlay
             loop
             muted
-            preload
             className="lg:h-[90vh] h-[60vh] inset-0 object-cover z-[2]"
           >
             <source src="assets/bg_mov.mp4" type="video/mp4" />
