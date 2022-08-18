@@ -9,9 +9,10 @@ export default function FeatureCard({
   image,
   link,
   className,
+  ...props
 }) {
   return (
-    <div className={`${styles.container} ${className}`}>
+    <div className={`${styles.container} ${className}`} {...props}>
       <h1 className={styles.title}>
         <Icon /> {title}
       </h1>
