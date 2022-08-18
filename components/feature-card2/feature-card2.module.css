@@ -1,0 +1,13 @@
+.container {
+  @apply xl:max-w-[398px] md:max-w-[328px] w-full xl:h-[334px] h-[290px] rounded-[10px];
+  @apply xl:py-[58px] py-[40px] xl:px-[44px] px-[34px] box-border;
+  @apply flex flex-col items-center  xl:scale-100 scale-90 bg-green_dark2 border border-green_dark2;
+}
+
+.title {
+  @apply flex items-center gap-2 text-[26px] leading-[160%] text-green_light2 pt-8;
+}
+
+.text {
+  @apply pt-2 xl:text-[16px] lg:text-[14px] text-[12px] text-green_light2 leading-[140%] text-center;
+}
