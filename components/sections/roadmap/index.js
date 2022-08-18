@@ -15,7 +15,6 @@ export function RoadMap() {
           <Text className="text-white opacity-[0.65] pt-4 text-center max-w-[54rem] pb-8 px-4">
             Come with us on this journey. Wanna know what we’re up to? It’s
             right here.
-            <br /> STARKDEFI RAVING MAD!
           </Text>
         </Fade>
         <div className="xl:py-16 py-4">
