@@ -14,6 +14,7 @@ export default function Document() {
         <Script
           src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"
           strategy="beforeInteractive"
+         
         ></Script>
 
         <Script
