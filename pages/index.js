@@ -1,6 +1,6 @@
 import { Footer } from "../components/footer";
 import { NavBar } from "../components/navbar";
-import { HeroBrief } from "../components/sections/hero-brief";
+import { Hero } from "../components/sections/hero";
 import { KeyOffering } from "../components/sections/key-offerings";
 import { RoadMap } from "../components/sections/roadmap";
 import { Team } from "../components/sections/team";
@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <NavBar />
       <main className="">
-        <HeroBrief />
+        <Hero />
         <KeyOffering />
         <RoadMap />
         <StarkSlides />
