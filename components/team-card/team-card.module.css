@@ -1,0 +1,8 @@
+.container:hover {
+  z-index: 4;
+  transform: scale(1.05);
+}
+
+.container:hover div {
+  opacity: 1;
+}
