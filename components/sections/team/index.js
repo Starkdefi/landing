@@ -61,7 +61,7 @@ const team = [
 export function Team() {
   return (
     <section
-      className={`${styles.container} 3xl:max-container flex items-center justify-between md:flex-row flex-col-reverse  xl:py-40 lg:py-32 py-24 md:flex-nowrap  flex-wrap`}
+      className={`${styles.container} 3xl:max-container flex items-center justify-between md:flex-row flex-col  xl:py-40 lg:py-32 py-24 md:flex-nowrap  flex-wrap`}
     >
       <div className="md:w-1/2 w-full xl:h-[598px] lg:h-[540px] h-[400px] grid xl:grid-cols-[repeat(14,minmax(0,1fr))] xl:grid-rows-[repeat(15,minmax(0,1fr))] grid-cols-[repeat(12,minmax(0,1fr))] grid-rows-[repeat(14,minmax(0,1fr))]">
         {team.map(({ image, name, className }, key) => (
