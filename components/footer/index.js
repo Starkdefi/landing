@@ -53,7 +53,7 @@ export function Footer() {
             </p>
           </div>
           <div className="flex items-center lg:gap-8 gap-4 xl:pt-28 lg:pt-24 md:pt-12 pt-8 lg:flex-nowrap flex-wrap md:pb-0 pb-8">
-            <a href="#">
+            <a href="mailto:starkdefi@gmail.com" target="_blank" rel="noreferrer">
               <Button className="xl:text-[18px] md:text-[14px] text-[12px] text-green_light bg-green_2 rounded">
                 <p className="flex gap-3 items-center py-1">
                   Contact Us <Arrow className={styles.arrow} />
