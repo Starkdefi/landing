@@ -21,7 +21,7 @@ export function Hero() {
             autoPlay
             loop
             muted
-            className="lg:h-[90vh] h-[60vh] inset-0 object-cover z-[2]"
+            className=" xl:h-screen lg:h-[65vmax] lg:w-full h-[60vh] inset-0 object-cover z-[2]"
           >
             <source src="assets/bg_mov.mp4" type="video/mp4" />
           </video>
