@@ -15,6 +15,7 @@ export function TeamCard({ image, name, ...props }) {
           objectFit="cover"
           objectPosition="center"
           placeholder="blur"
+          quality={100}
           alt={name}
         />
         <div className="absolute bg-black bg-opacity-[0.44] bottom-0 left-0 right-0 opacity-0 transition-all duration-200 ease-in">
