@@ -13,6 +13,7 @@ export function Hero() {
             objectFit="cover"
             objectPosition="center"
             alt=""
+            placeholder="blur"
             src={bgImage}
             style={{ zIndex: "-1" }}
           />

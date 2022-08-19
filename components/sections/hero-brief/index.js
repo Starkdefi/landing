@@ -48,6 +48,7 @@ export function HeroBrief() {
             layout="fill"
             objectFit="cover"
             objectPosition="center"
+            placeholder="blur"
             alt=""
             src={bgImage}
           />

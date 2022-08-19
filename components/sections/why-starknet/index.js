@@ -95,6 +95,7 @@ export function StarkSlides() {
                   <Image
                     layout="responsive"
                     objectFit="cover"
+                    placeholder="blur"
                     src={image}
                     alt={title}
                   />
