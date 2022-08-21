@@ -17,7 +17,7 @@ export function RoadMap() {
             right here.
           </Text>
         </Fade>
-        <div className="xl:py-16 py-4">
+        <div className="xl:py-16 py-4 w-full">
           <RoadMapWidget />
         </div>
       </div>
