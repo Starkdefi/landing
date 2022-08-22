@@ -14,7 +14,7 @@ const offers = [
   {
     Icon: Farm,
     title: "FARM",
-    text: "Enable Swaps Effortlessly with our AMM solution featuring zap to simplify liquidity provision.",
+    text: "Boost your Projects liquidity and earn rewards as a liquidity provider with our farming service.",
     className: "xl:mt-[6rem] lg:mt-[4rem]",
   },
   {
@@ -44,7 +44,7 @@ const offers = [
   {
     Icon: Launch,
     title: "LAUNCHPAD",
-    text: "Enable Swaps Effortlessly with our AMM solution featuring zap to simplify liquidity provision.",
+    text: "Give your project a chance to succeed with a Launchpad that provides you with the requisite support.",
     className: "xl:mt-8",
   },
 ];
@@ -54,12 +54,12 @@ export function Offering() {
       <div className="flex flex-col items-center justify-center xl:pt-28 lg:pt-20 pt-14">
         <Fade cascade="true" direction="up" triggerOnce="true">
           <Title className="text-white text-center">
-            All <span className="text-green_light">Products</span>
+            Our <span className="text-green_light">Products</span>
           </Title>
           <Text className="text-white opacity-[0.65] pt-4 text-center max-w-[54rem]">
-            As your go-to defi hub, we offer a wide range of defi solutions
-            tailored at taking full advantage of the scalable and economical
-            features of StarkNet.
+            StarkDeFi distinguishes itself by providing a variety of solutions
+            to leverage <br className="md:block hidden" /> StarkNet’s
+            scalability and Security.
           </Text>
         </Fade>
       </div>
