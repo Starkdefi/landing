@@ -9,19 +9,16 @@ export function Brief() {
       <div className={styles.brief}>
         <Fade cascade="true" direction="up" triggerOnce="true">
           <Title className="text-white text-center">
-            …Your one-stop hub for Defi Solutions on Starknet
+            ...All-in-one Defi hub for the next generation of
           </Title>
-          <Title className="text-green_light text-center">
-            Don’t be left out, a change is coming…
-          </Title>
+          <Title className="text-green_light text-center">blockchain...</Title>
           <Text className=" text-white opacity-[0.65] text-center pt-8 lg:pb-12 pb-4">
             StarkDeFi is a hub for defi solutions on StarkNet, looking to
             improve the adoption of blockchain technology. StarkNet provides
             unlimited possibilities for innovative solutions (Scalability) on
             the blockchain. Our aim is to facilitate and simplify the onboarding
-            process for newbies in the blockchain space with a hub that
-            accommodates a variety of deFi solutions. For us, DeFi is not just
-            for the veterans in the space, but for the ordinary person as well.
+            process for the “Next generation user” in the blockchain space with
+            a hub that accommodates a variety of deFi solutions.
           </Text>
           <a href="#offers">
             <button>
