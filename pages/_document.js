@@ -12,7 +12,7 @@ export default function Document() {
         <NextScript />
 
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-LNH0V18K4F"
+          src="//www.googletagmanager.com/gtag/js?id=G-LNH0V18K4F"
           strategy="afterInteractive"
         />
         <Script id="google-analytics" strategy="afterInteractive">

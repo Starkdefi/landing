@@ -57,7 +57,7 @@ const slides = [
 
 export function StarkSlides() {
   return (
-    <section className={`${styles.container} max-container`}>
+    <section id="slides-parent" className={`${styles.container} max-container`}>
       <div className="">
         <div className="flex items-baseline justify-between">
           <Fade triggerOnce="true" direction="up">
@@ -74,11 +74,11 @@ export function StarkSlides() {
             />
           </Fade>
         </div>
-        <div
-          id="slides-container"
-          className="flex mt-12 justify-between cursor-all-scroll  "
-        >
-          <div className="lg:max-h-[280px] max-h-[266px] overflow-y-auto no-scrollbar flex flex-col gap-8 snap-y snap-mandatory">
+        <div className="flex mt-12 justify-between cursor-all-scroll relative">
+          <div
+            id="slides-container"
+            className="lg:max-h-[390px] max-h-[266px] overflow-y-auto no-scrollbar flex flex-col gap-8 snap-y snap-mandatory"
+          >
             {slides.map(({ title, content, image }, i) => (
               <div key={i} className="py-2 flex justify-between snap-center">
                 <div className="md:w-3/5">
@@ -103,6 +103,7 @@ export function StarkSlides() {
               </div>
             ))}
           </div>
+          <div className="absolute bottom-0 left-0 right-0 blur-lg h-[20%]"></div>
         </div>
       </div>
     </section>
