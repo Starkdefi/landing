@@ -109,3 +109,7 @@ body {
   backdrop-filter: blur(60px);
   z-index: -1;
 }
+
+.active_slide {
+  opacity: 1 !important;
+}

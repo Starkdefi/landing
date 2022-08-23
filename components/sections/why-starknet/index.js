@@ -6,6 +6,7 @@ import trustless from "../../../assets/images/trustless.png";
 import more from "../../../assets/images/more.png";
 import Image from "next/image";
 import { Fade } from "react-awesome-reveal";
+import { useRef, useEffect } from "react";
 
 const slides = [
   {
@@ -56,6 +57,34 @@ const slides = [
 ];
 
 export function StarkSlides() {
+  const slideRefs = useRef([]);
+
+  useEffect(() => {
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const { target } = entry;
+
+          if (entry.isIntersecting) {
+            target.classList.add("active_slide");
+          } else {
+            target.classList.remove("active_slide");
+          }
+        });
+      },
+      {
+        rootMargin: "-1px 0px 0px 0px",
+        threshold: 0.9,
+      }
+    );
+
+    slideRefs.current.forEach((slide) => {
+      if (slide) {
+        io.observe(slide);
+      }
+    });
+  }, [slideRefs]);
+
   return (
     <section id="slides-parent" className={`${styles.container} max-container`}>
       <div className="">
@@ -81,8 +110,12 @@ export function StarkSlides() {
           >
             {slides.map(({ title, content, image }, i) => (
               <div
+                id={`slide-${i}`}
                 key={i}
-                className="py-2 flex justify-between snap-start md:h-[274px]"
+                ref={(ref) => {
+                  slideRefs.current[i] = ref;
+                }}
+                className="py-2 flex justify-between snap-start md:h-[220px] opacity-[0.15] transition-opacity duration-300 ease-in-out"
               >
                 <div className="md:w-3/5">
                   <Fade triggerOnce="true" direction="up">
@@ -94,7 +127,7 @@ export function StarkSlides() {
                     </p>
                   </Fade>
                 </div>
-                <div className="h-[258px] lg:w-[300px] w-[220px] relative overflow-hidden hidden md:block">
+                <div className="lg:w-[210px] lg:h-[258px] h-[170px]  w-[220px] relative overflow-hidden hidden md:block">
                   <Image
                     layout="responsive"
                     objectFit="cover"
@@ -106,7 +139,6 @@ export function StarkSlides() {
               </div>
             ))}
           </div>
-          <div className="absolute bottom-0 left-0 right-0 blur-lg h-[20%]"></div>
         </div>
       </div>
     </section>
