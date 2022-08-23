@@ -16,7 +16,7 @@ function StarkApp({ Component, pageProps }) {
         />
         <meta
           name="twitter:image"
-          content="/assets/og-image.jpg" />
+          content="https:www.starkdefi.com/assets/og-image.jpg" />
         <meta
           name="description"
           content="StarkDeFi is a hub for defi solutions on StarkNet, looking to bring blockchain to the masses. Learn more about our solution."
