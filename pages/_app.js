@@ -31,7 +31,7 @@ function StarkApp({ Component, pageProps }) {
           name="twitter:description"
           content="StarkDeFi is a hub for defi solutions on StarkNet. We aim to facilitate and simplify the onboarding process for all level of DEFI users with a hub that accommodates a variety of DEFI solutions. "
         />
-        <meta name="twitter:image" content="/assets/og-image.jpg" />
+        <meta name="twitter:image" content="https://drive.google.com/file/d/1fZbl0_YajqlzLRfozZ6BaQzUs2KZkDb7/view?usp=sharing" />
       </Head>
 
       <Component {...pageProps} />
