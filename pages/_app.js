@@ -3,7 +3,6 @@ import Head from "next/head";
 import React from "react";
 
 function StarkApp({ Component, pageProps }) {
-
   return (
     <>
       <Head>
@@ -17,12 +16,22 @@ function StarkApp({ Component, pageProps }) {
         <meta property="og:title" content="Introducing StarkDefi" />
         <meta
           property="og:description"
-          content="StarkDeFi is a hub for defi solutions on StarkNet. We aim to facilitate and simplify the onboarding process for all level of DEFI users a hub that accommodates a variety of DEFI solutions. "
+          content="StarkDeFi is a hub for defi solutions on StarkNet. We aim to facilitate and simplify the onboarding process for all level of DEFI users with a hub that accommodates a variety of DEFI solutions. "
         />
         <meta property="og:image:width" content="1200" />
 
         <meta property="og:image:height" content="630" />
         <meta property="og:image" content="/assets/og-image.jpg" />
+
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@StarkDefi" />
+        <meta name="twitter:creator" content="@idd_iraaj" />
+        <meta name="twitter:title" content="Introducing StarkDefi" />
+        <meta
+          name="twitter:description"
+          content="StarkDeFi is a hub for defi solutions on StarkNet. We aim to facilitate and simplify the onboarding process for all level of DEFI users with a hub that accommodates a variety of DEFI solutions. "
+        />
+        <meta name="twitter:image" content="/assets/og-image.jpg" />
       </Head>
 
       <Component {...pageProps} />
