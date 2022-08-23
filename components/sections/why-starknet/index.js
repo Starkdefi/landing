@@ -77,10 +77,13 @@ export function StarkSlides() {
         <div className="flex mt-12 justify-between cursor-all-scroll relative">
           <div
             id="slides-container"
-            className="lg:max-h-[390px] max-h-[266px] overflow-y-auto no-scrollbar flex flex-col gap-8 snap-y snap-mandatory"
+            className="lg:max-h-[365px] max-h-[266px] overflow-y-auto no-scrollbar flex flex-col gap-8 snap-y snap-mandatory"
           >
             {slides.map(({ title, content, image }, i) => (
-              <div key={i} className="py-2 flex justify-between snap-center">
+              <div
+                key={i}
+                className="py-2 flex justify-between snap-start md:h-[274px]"
+              >
                 <div className="md:w-3/5">
                   <Fade triggerOnce="true" direction="up">
                     <h2 className="xl:pl-10 md:pl-8 pl-4 text-white xl:text-[26px] lg:text-[24px] text-[22px] leading-[160%] border-l-2 border-solid border-white">
