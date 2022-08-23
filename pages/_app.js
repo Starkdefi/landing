@@ -17,7 +17,7 @@ function StarkApp({ Component, pageProps }) {
         />
         <meta
           name="twitter:image"
-          content="https://img-en.fs.com/includes/templates/fiberstore/images/open_graph_logo.png"
+          content="https://www.starkdefi.com/assets/og-image.jpg"
         />
         <meta
           name="description"
