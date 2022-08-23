@@ -1,4 +1,5 @@
 import styles from "./roadmap.module.css";
+import { Fade } from "react-awesome-reveal";
 
 export function RoadMapWidget() {
   return (
@@ -128,13 +129,14 @@ export function RoadMapWidget() {
 
 export function RoadMapQ3() {
   return (
-    <>
+    <Fade>
       <svg
         width="100%"
         height="611"
         viewBox="0 0 1289 580"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        className={styles.container}
       >
         <path
           d="M249 165.287V322H251V165C250.344 165.173 249.674 165.269 249 165.287Z"
@@ -217,19 +219,20 @@ export function RoadMapQ3() {
           fill="white"
         />
       </svg>
-    </>
+    </Fade>
   );
 }
 
 export function RoadMapQ4() {
   return (
-    <>
+    <Fade>
       <svg
         width="100%"
         height="611"
         viewBox="0 0 1289 611"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        className={styles.container}
       >
         <path
           d="M271 171.287V328H273V171C272.344 171.173 271.674 171.269 271 171.287Z"
@@ -312,6 +315,6 @@ export function RoadMapQ4() {
           fill="white"
         />
       </svg>
-    </>
+    </Fade>
   );
 }
