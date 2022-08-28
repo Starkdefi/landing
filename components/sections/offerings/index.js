@@ -6,6 +6,7 @@ import AMM from "../../../assets/icons/AMM.svg";
 import Farm from "../../../assets/icons/farm.svg";
 import Launch from "../../../assets/icons/launchpad.svg";
 import Mint from "../../../assets/icons/mint.svg";
+import Synergy from "../../../assets/icons/synergy.svg";
 
 import { Fade } from "react-awesome-reveal";
 import FeatureCard2 from "../../feature-card2";
@@ -18,11 +19,12 @@ const offers = [
     className: "xl:mt-[6rem] lg:mt-[4rem]",
   },
   {
-    Icon: AMM,
-    title: "AMM",
-    text: "Enable Swaps Effortlessly with our AMM solution featuring zap to simplify liquidity provision.",
+    Icon: Synergy,
+    title: "SYNERGY POOLS",
+    text: "Deposit funds into our zero loss Synergy pools for a chance to win big in our weekly lottery.",
     className: "",
   },
+
   {
     Icon: Mint,
     title: "MINT",
@@ -47,6 +49,14 @@ const offers = [
     text: "Give your project a chance to succeed with a Launchpad that provides you with the requisite support.",
     className: "xl:mt-8",
   },
+  {},
+  {
+    Icon: AMM,
+    title: "AMM",
+    text: "Enable Swaps Effortlessly with our AMM solution featuring zap to simplify liquidity provision.",
+    className: "xl:-mt-[4rem] lg:-mt-[4rem]",
+  },
+  {},
 ];
 export function Offering() {
   return (
@@ -67,11 +77,18 @@ export function Offering() {
         className="flex lg:justify-between justify-center pt-12 flex-wrap"
         id="feature-cards"
       >
-        {offers.map((offer, i) => (
-          <Fade key={i} cascade="true" direction="up" triggerOnce="true">
-            <FeatureCard2 {...offer} />
-          </Fade>
-        ))}
+        {offers.map((offer, i) =>
+          Object.keys(offer).length !== 0 ? (
+            <Fade key={i} cascade="true" direction="up" triggerOnce="true">
+              <FeatureCard2 {...offer} />
+            </Fade>
+          ) : (
+            <div
+              key={i}
+              className="xl:max-w-[398px] md:max-w-[328px] w-full"
+            ></div>
+          )
+        )}
       </div>
     </section>
   );
