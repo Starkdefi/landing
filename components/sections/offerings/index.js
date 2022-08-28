@@ -85,7 +85,7 @@ export function Offering() {
           ) : (
             <div
               key={i}
-              className="xl:max-w-[398px] md:max-w-[328px] w-full"
+              className="xl:max-w-[398px] md:max-w-[328px] w-full lg:block hidden"
             ></div>
           )
         )}
