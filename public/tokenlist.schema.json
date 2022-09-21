@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/draft-01/schema#",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://starkdefi.com/tokenlist.schema.json",
   "title": "StarkDefi Token List",
   "description": "Schema for lists of tokens compatible with the Starkdefi Interface",
