@@ -42,7 +42,7 @@ const team = [
     image: brabbit,
     name: "B-Rabbit",
     className:
-      "xl:[grid-area:11/8/14/12] xl:m-0 xl:mt-[1vmax] [grid-area:11/7/15/11] -mt-4 -mr-4 ml-4 z-[3]",
+      "xl:[grid-area:11/8/14/12] xl:m-0 xl:mt-[1vmax] [grid-area:11/7/15/11] -mt-4 -mr-4 ml-4 z-[0]",
   },
 ];
 export function Team() {
