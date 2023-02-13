@@ -6,7 +6,7 @@ export function TeamCard({ image, name, ...props }) {
   return (
     <div
       {...props}
-      className={`${styles.container} ${props.className} relative max-w-[280px] transition-all duration-200 ease-in`}
+      className={`${styles.container} ${props.className} relative xl:max-w-[300px] max-w-[280px] transition-all duration-200 ease-in`}
     >
       <Fade direction="up" triggerOnce>
         <Image

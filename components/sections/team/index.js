@@ -12,27 +12,27 @@ const team = [
   {
     image: patrick,
     name: "Patrick Hemming",
-    className: "[grid-area:1/1/4/5] pl-5 -mr-4 z-[1]",
+    className: "xl:[grid-area:1/1/3/4] [grid-area:1/1/4/5] pl-5 xl:-mr-8 -mr-4 z-[1]",
   },
   {
     image: iddriss,
     name: "Iddriss Raaj",
-    className: "[grid-area:1/9/3/12] pt-4 -mb-4 -ml-4 z-[3]",
+    className: "xl:[grid-area:1/7/3/10] [grid-area:1/9/3/12] xl:-ml-4 pt-4 -mb-4 -ml-4 z-[3]",
   },
   {
     image: godsway,
     name: "Godsway Annih",
-    className: "[grid-area:5/8/8/12] z-[5] mr-2",
+    className: "xl:[grid-area:4/7/7/10] [grid-area:5/8/8/12] xl:-ml-8 z-[5] mr-2",
   },
   {
     image: neslisah,
     name: "M.Neslişah Suiçmez",
-    className: "[grid-area:5/1/9/5] pl-2 z-[4]",
+    className: "xl:[grid-area:4/1/6/4] [grid-area:5/1/9/5] xl:-mt-10 pl-2 z-[4]",
   },
   {
     image: zak,
     name: "Ismael Zak",
-    className: "[grid-area:3/5/7/9] -ml-2 z-[2]",
+    className: "xl:[grid-area:3/4/6/7] [grid-area:3/5/7/9] xl:-mt-20 xl:-ml-4 -ml-2 z-[2]",
   },
   
 ];
@@ -41,7 +41,7 @@ export function Team() {
     <section
       className={`${styles.container} 3xl:max-container flex items-center justify-between md:flex-row flex-col  xl:py-40 lg:py-32 py-24 md:flex-nowrap  flex-wrap`}
     >
-      <div className="md:w-1/2 w-full grid grid-cols-11 grid-rows-[repeat(7,minmax(0,1fr))] mb-8">
+      <div className="md:w-1/2 w-full grid xl:grid-cols-9 grid-cols-11 xl:grid-rows-[repeat(5,minmax(0,1fr))] grid-rows-[repeat(7,minmax(0,1fr))] mb-8">
         {team.map(({ image, name, className }) => (
           <TeamCard
             key={name}
