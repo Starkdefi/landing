@@ -31,7 +31,7 @@ const team = [
   },
   {
     image: zak,
-    name: "Ismael Zak",
+    name: "Ismail Zak",
     className: "xl:[grid-area:3/4/6/7] [grid-area:3/5/7/9] xl:-mt-20 xl:-ml-4 -ml-2 z-[2]",
   },
   
