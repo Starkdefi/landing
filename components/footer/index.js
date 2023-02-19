@@ -53,7 +53,11 @@ export function Footer() {
             </p>
           </div>
           <div className="flex items-center lg:gap-8 gap-4 xl:pt-28 lg:pt-24 md:pt-12 pt-8 lg:flex-nowrap flex-wrap md:pb-0 pb-8">
-            <a href="mailto:starkdefi@gmail.com" target="_blank" rel="noreferrer">
+            <a
+              href="mailto:starkdefi@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
               <Button className="xl:text-[18px] md:text-[14px] text-[12px] text-green_light bg-green_2 rounded">
                 <p className="flex gap-3 items-center py-1">
                   Contact Us <Arrow className={styles.arrow} />
@@ -81,13 +85,18 @@ export function Footer() {
           <div>
             <h3 className={styles.section_head}>Documentation</h3>
             <div className="flex items-start justify-between flex-col pt-4">
-              <a className={styles.section_nav_link} href="/#" target="_blank">
-                Litepaper (coming soon)
+              <a
+                className={styles.section_nav_link}
+                href="https://docs.starkdefi.com/introduction/roadmap-1"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Litepaper
               </a>
 
               <a
                 className={styles.section_nav_link}
-                href="/#"
+                href="https://docs.starkdefi.com/quick-start/connect-to-starkdefi"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -96,7 +105,7 @@ export function Footer() {
 
               <a
                 className={styles.section_nav_link}
-                href="/#"
+                href="https://docs.starkdefi.com/extras/resources"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -106,7 +115,7 @@ export function Footer() {
           </div>
           <a
             className={styles.tos_pp}
-            href="/#"
+            href="https://docs.starkdefi.com/extras/privacy-policy"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -133,7 +142,7 @@ export function Footer() {
           </div>
           <a
             className={styles.tos_pp}
-            href="/#"
+            href="https://docs.starkdefi.com/extras/terms-of-use"
             target="_blank"
             rel="noopener noreferrer"
           >

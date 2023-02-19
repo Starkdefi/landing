@@ -1,4 +1,4 @@
-import { RoadMapQ3, RoadMapQ4 } from "../../roadmap";
+import { RoadmapQ1, RoadMapQ2 } from "../../roadmap";
 import { Title, Text } from "../../utils";
 import styles from "./roadmap.module.css";
 import { Fade } from "react-awesome-reveal";
@@ -6,12 +6,12 @@ import { useState } from "react";
 
 const Qs = [
   {
-    q: "Q3",
-    Roadmap: RoadMapQ3,
+    q: "Q1",
+    Roadmap: RoadmapQ1,
   },
   {
-    q: "Q4",
-    Roadmap: RoadMapQ4,
+    q: "Q2",
+    Roadmap: RoadMapQ2,
   },
 ];
 export function RoadMap() {
