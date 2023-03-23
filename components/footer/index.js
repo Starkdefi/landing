@@ -87,7 +87,7 @@ export function Footer() {
             <div className="flex items-start justify-between flex-col pt-4">
               <a
                 className={styles.section_nav_link}
-                href="https://docs.starkdefi.com/introduction/roadmap-1"
+                href="https://docs.starkdefi.com/project-overview"
                 rel="noopener noreferrer"
                 target="_blank"
               >
