@@ -15,7 +15,7 @@ export function HeroBrief() {
             <h1 className="xl:text-[62px] lg:text-[50px] md:text-[35px] text-[30px] leading-[138%] text-white">
               Bringing
               <br className="md:hidden" />{" "}
-              <span className=" text-green_light">StarkNet</span>{" "}
+              <span className=" text-green_light">Starknet</span>{" "}
               <br className="md:hidden" />
               Closer to Your Doorstep.
             </h1>
@@ -63,8 +63,8 @@ export function HeroBrief() {
             Don’t be left out, a change is coming…
           </Title>
           <Text className=" text-white opacity-[0.65] text-center pt-8 lg:pb-12 pb-4">
-            StarkDeFi is a hub for defi solutions on StarkNet, looking to
-            improve the adoption of blockchain technology. StarkNet provides
+            StarkDeFi is a hub for defi solutions on Starknet, looking to
+            improve the adoption of blockchain technology. Starknet provides
             unlimited possibilities for innovative solutions (Scalability) on
             the blockchain. Our aim is to facilitate and simplify the onboarding
             process for newbies in the blockchain space with a hub that

@@ -13,7 +13,7 @@ function StarkApp({ Component, pageProps }) {
         <meta name="twitter:url" content="https://www.starkdefi.com" />
         <meta
           name="twitter:description"
-          content="StarkDeFi is a hub for defi solutions on StarkNet. We aim to facilitate and simplify the onboarding process for all level of DEFI users with a hub that accommodates a variety of DEFI solutions. "
+          content="StarkDeFi is a hub for defi solutions on Starknet. We aim to facilitate and simplify the onboarding process for all level of DEFI users with a hub that accommodates a variety of DEFI solutions. "
         />
         <meta
           name="twitter:image"
@@ -21,13 +21,13 @@ function StarkApp({ Component, pageProps }) {
         />
         <meta
           name="description"
-          content="StarkDeFi is a hub for defi solutions on StarkNet, looking to bring blockchain to the masses. Learn more about our solution."
+          content="StarkDeFi is a hub for defi solutions on Starknet, looking to bring blockchain to the masses. Learn more about our solution."
           key="desc"
         />
         <meta property="og:title" content="Introducing StarkDefi" />
         <meta
           property="og:description"
-          content="StarkDeFi is a hub for defi solutions on StarkNet. We aim to facilitate and simplify the onboarding process for all level of DEFI users with a hub that accommodates a variety of DEFI solutions. "
+          content="StarkDeFi is a hub for defi solutions on Starknet. We aim to facilitate and simplify the onboarding process for all level of DEFI users with a hub that accommodates a variety of DEFI solutions. "
         />
         <meta property="og:image:width" content="1200" />
 

@@ -13,8 +13,8 @@ export function Brief() {
           </Title>
           <Title className="text-green_light text-center">blockchain...</Title>
           <Text className=" text-white opacity-[0.65] text-center pt-8 lg:pb-12 pb-4">
-            StarkDeFi is a hub for defi solutions on StarkNet, looking to
-            improve the adoption of blockchain technology. StarkNet provides
+            StarkDeFi is a hub for defi solutions on Starknet, looking to
+            improve the adoption of blockchain technology. Starknet provides
             unlimited possibilities for innovative solutions (Scalability) on
             the blockchain. Our aim is to facilitate and simplify the onboarding
             process for the “Next generation user” in the blockchain space with

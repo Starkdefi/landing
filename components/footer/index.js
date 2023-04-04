@@ -48,7 +48,7 @@ export function Footer() {
             <p className="flex items-center gap-2 opacity-40 pt-4">
               <Powered />
               <span className="text-white font-CeraPro-Light leading-[160%]">
-                Powered by StarkNet
+                Powered by Starknet
               </span>
             </p>
           </div>

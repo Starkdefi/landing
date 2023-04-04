@@ -48,7 +48,7 @@ export function KeyOffering() {
           <Text className="text-white opacity-[0.65] pt-4 text-center max-w-[54rem]">
             As your go-to defi hub, we are offering a wide range of defi
             solutions tailored at taking full advantage of the scalable and
-            economical features of StarkNet.
+            economical features of Starknet.
           </Text>
           <SimpleLink
             className="text-white opacity-[0.85] text-[16px] pt-4 hover:text-green_light"

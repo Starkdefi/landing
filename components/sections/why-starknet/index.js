@@ -91,7 +91,7 @@ export function StarkSlides() {
         <div className="flex items-baseline justify-between">
           <Fade triggerOnce="true" direction="up">
             <Title className="text-white text-left">
-              Why <span className="text-green_light">StarkNet?</span>
+              Why <span className="text-green_light">Starknet?</span>
             </Title>
 
             <SimpleLink

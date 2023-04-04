@@ -68,7 +68,7 @@ export function Offering() {
           </Title>
           <Text className="text-white opacity-[0.65] pt-4 text-center max-w-[54rem]">
             StarkDeFi distinguishes itself by providing a variety of solutions
-            to leverage <br className="md:block hidden" /> StarkNet’s
+            to leverage <br className="md:block hidden" /> Starknet’s
             scalability and Security.
           </Text>
         </Fade>

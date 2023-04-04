@@ -204,7 +204,7 @@
       "properties": {
         "chainId": {
           "type": "string",
-          "description": "The chain ID of the StarkNet network where this token is deployed",
+          "description": "The chain ID of the Starknet network where this token is deployed",
           "minLength": 1,
           "maxLength": 40,
           "examples": [

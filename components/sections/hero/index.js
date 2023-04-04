@@ -33,7 +33,7 @@ export function Hero() {
           <Fade direction="up" cascade="true" triggerOnce="true">
             <h1 className=" font-CeraPro-Bold xl:text-[75px] lg:text-[50px] md:text-[35px] text-[30px] leading-[138%] text-white">
               Your Access Portal
-              <br /> to <span className="text-green_light">StarkNet.</span>
+              <br /> to <span className="text-green_light">Starknet.</span>
             </h1>
             <p className="font-CeraPro-Light xl:text-[20px] md:text-[16px] text-sm leading-[160%] text-white pt-4">
               StarkDefi is a{" "}
