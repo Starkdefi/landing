@@ -19,12 +19,11 @@ const offers = [
     className: "xl:mt-[6rem] lg:mt-[4rem]",
   },
   {
-    Icon: Synergy,
-    title: "SYNERGY POOLS",
-    text: "Deposit funds into our zero loss Synergy pools for a chance to win big in our weekly lottery.",
-    className: "",
+    Icon: AMM,
+    title: "AMM",
+    text: "Enable Swaps Effortlessly with our AMM solution featuring zap to simplify liquidity provision.",
+    className: "xl:-mt-[4rem] lg:-mt-[4rem]",
   },
-
   {
     Icon: Mint,
     title: "MINT",
@@ -51,10 +50,10 @@ const offers = [
   },
   {},
   {
-    Icon: AMM,
-    title: "AMM",
-    text: "Enable Swaps Effortlessly with our AMM solution featuring zap to simplify liquidity provision.",
-    className: "xl:-mt-[4rem] lg:-mt-[4rem]",
+    Icon: Synergy,
+    title: "SYNERGY POOLS",
+    text: "Deposit funds into our zero loss Synergy pools for a chance to win in our weekly lottery.",
+    className: "",
   },
   {},
 ];
@@ -79,12 +78,17 @@ export function Offering() {
       >
         {offers.map((offer, i) =>
           Object.keys(offer).length !== 0 ? (
-            <Fade key={i} cascade="true" direction="up" triggerOnce="true">
+            <Fade
+              key={`${offer.title}_${i * 1}`}
+              cascade="true"
+              direction="up"
+              triggerOnce="true"
+            >
               <FeatureCard2 {...offer} />
             </Fade>
           ) : (
             <div
-              key={i}
+              key={`${offer.title}_${i * 1}`}
               className="xl:max-w-[398px] md:max-w-[328px] w-full lg:block hidden"
             ></div>
           )
